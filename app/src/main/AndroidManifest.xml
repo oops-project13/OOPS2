@@ -3,25 +3,24 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:gravity="center"
+    android:padding="16dp">
 
-    <!-- Bold "Hey there" text in center -->
+    <!-- TextView displaying "Hey there" -->
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="189dp"
-        android:layout_height="54dp"
-        android:gravity="center"
-        android:text="Hey there !!"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <!-- Button below the text -->
-    <Button
-        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Hi" />
+        android:text="Hey there"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"/>
+
+    <!-- Button to show toast message -->
+    <Button
+        android:id="@+id/button_hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi"/>
+
 </LinearLayout>

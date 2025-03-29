@@ -1,4 +1,4 @@
-package com.example.oops2;
+package com.example.oops;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,15 +13,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find button by ID
-        Button button = findViewById(R.id.button);
+        Button button = findViewById(R.id.button_hi);
 
         // Set click listener
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Show Toast message
-                Toast.makeText(MainActivity.this, "Welcome to OOPS Project :)", Toast.LENGTH_SHORT).show();
-            }
-        });
+        button.setOnClickListener(v ->
+                Toast.makeText(MainActivity.this, "Welcome to OOPS Project", Toast.LENGTH_SHORT).show()
+        );
     }
 }
